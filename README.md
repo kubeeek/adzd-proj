@@ -7,7 +7,7 @@
 ## Basic AWS
 1. Create AWS EKS cluster and node group -> preferably 2-4 medium instances in the node group
 2. Create Kubeconfig
-    1. aws eks --region <region> update-kubeconfig --name <cluster-name> 
+    * aws eks --region <region> update-kubeconfig --name <cluster-name> 
 ## Deploying Dask to Kubernetes
 1. Add the Dask Helm Repository
     * helm repo add dask https://helm.dask.org/
