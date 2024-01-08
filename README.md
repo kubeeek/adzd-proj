@@ -7,12 +7,12 @@
 ## Basic AWS
 1. Create AWS EKS cluster and node group -> preferably 2-4 medium instances in the node group
 2. Create Kubeconfig
-    * aws eks --region <region> update-kubeconfig --name <cluster-name> 
+    * `aws eks --region (region) update-kubeconfig --name (cluster-name)`
 ## Deploying Dask to Kubernetes
 1. Add the Dask Helm Repository
-    * helm repo add dask https://helm.dask.org/
+    * `helm repo add dask https://helm.dask.org/`
 2. Install the Dask Helm Chart
-    * helm upgrade my-dask dask/dask -f values.yaml
+    * `helm upgrade my-dask dask/dask -f values.yaml`
     * Specify any extra pip or condo packages as described on https://artifacthub.io/packages/helm/dask/dask#customizing-python-environment
 3. Forward ports
     1. Execute this script (preferably bash)
