@@ -1,0 +1,9 @@
+jupyter:
+  env:
+    - name: EXTRA_PIP_PACKAGES
+      value: s3fs dask-ml scikit-learn nltk
+
+worker:
+  env:
+    - name: EXTRA_PIP_PACKAGES
+      value: s3fs dask-ml scikit-learn nltk
